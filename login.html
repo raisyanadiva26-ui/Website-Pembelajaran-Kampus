@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h3 class="text-center mb-4">Login</h3>
+
+    <div class="form-login">
+        <input type="text" class="form-control mb-3" placeholder="Username">
+        <input type="password" class="form-control mb-3" placeholder="Password">
+        <button class="btn btn-primary w-100" onclick="masuk()">Masuk</button>
+    </div>
+</div>
+
+<script>
+function masuk(){
+    localStorage.setItem("login","iya");
+    window.location.href = "beranda.html";
+}
+</script>
+
+</body>
+</html>
